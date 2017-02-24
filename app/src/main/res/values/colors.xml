@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextLabel">#E0E0E0</color><!-- #BDBDBD -->
+
+    <color name="colorPinkLight">#FCE4EC</color>
+    <color name="colorPink">#FF4081</color>
+    <color name="colorPinkDark">#AD1457</color>
+
+    <color name="colorBlueLight">#C5CAE9</color>
+    <color name="colorBlue">#3F51B5</color>
+    <color name="colorBlueDark">#303F9F</color>
+
+    <color name="colorGreyLight">#EEEEEE</color>
+    <color name="colorGrey">#9E9E9E</color>
+    <color name="colorGreyDark">#424242</color>
+
+</resources>

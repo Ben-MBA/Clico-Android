@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.haramy.clico.AccountActivity"
+    tools:showIn="@layout/activity_account">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_detail_container_padding">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/layout_detail_marginTop">
+        <TextView
+            android:layout_width="@dimen/layout_detail_lbl_width"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_lbl_switchMode"
+            android:text="Client mode off" />
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch1" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_detail_height"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="@dimen/layout_detail_lbl_width"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_lbl_reputation"
+            android:text="Reputation"
+            android:layout_alignParentLeft="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_reputation"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="+ 354"
+            android:layout_toRightOf="@+id/textView_lbl_reputation" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:rating="3.5"
+            android:numStars="5"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_detail_height"
+        android:gravity="center_vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_detail_height"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="@dimen/layout_detail_lbl_width"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_lbl_firstName"
+            android:text="First Name" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_firstName"
+            android:textColor="@color/colorTextPrimary"
+            android:text="Moez" /> <!-- Anis -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_detail_height"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="@dimen/layout_detail_lbl_width"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_lbl_lastName"
+            android:text="Last Name" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_lastName"
+            android:textColor="@color/colorTextPrimary"
+            android:text="BEN AISSA" /> <!-- BELHIBA -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_detail_height"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="@dimen/layout_detail_lbl_width"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_lbl_email"
+            android:text="Email" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_email"
+            android:textColor="@color/colorTextPrimary"
+            android:text="moez.benaissa@gmail.com"
+            android:autoLink="email"/> <!-- android:text="anis.belhiba@gmail.com" -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_detail_height"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="@dimen/layout_detail_lbl_width"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_lbl_phone"
+            android:text="Phone" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_phone"
+            android:textColor="@color/colorTextPrimary"
+            android:text="+33(0)7 60 81 58 80"
+            android:autoLink="phone"/> <!-- +33 (0)6 12 13 14 15  -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_detail_height"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="@dimen/layout_detail_lbl_width"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_lbl_sharedDeals"
+            android:text="Shared deals" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_sharedDeals"
+            android:textColor="@color/colorTextPrimary"
+            android:text="73" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_detail_height"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="@dimen/layout_detail_lbl_width"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_lbl_lastSearch"
+            android:text="Last search" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_lastSearch"
+            android:textColor="@color/colorTextPrimary"
+            android:text="21/02/2017 at 9:05 am" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

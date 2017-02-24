@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fakeLayout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="150dp"
+        android:layout_height="250dp"
+        app:ael_expanded="true"
+        app:ael_duration="500"
+        app:ael_interpolator="accelerateDecelerate"
+        app:ael_orientation="vertical">
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+    <include layout="@layout/content_frag_deals_top" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bottomContainer"
+        android:layout_below="@+id/fakeLayout">
+        <include layout="@layout/content_frag_deals_bottom"/>
+    </LinearLayout>
+
+</RelativeLayout>
